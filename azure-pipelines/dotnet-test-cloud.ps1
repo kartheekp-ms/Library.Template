@@ -49,6 +49,7 @@ if ($x86) {
     -c $Configuration `
     --filter "TestCategory!=FailsInCloudTest" `
     --collect "XPlat Code Coverage" `
+    --settings "$PSScriptRoot/test.runsettings" `
     --blame-hang-timeout 60s `
     --blame-crash `
     -bl:"$ArtifactStagingFolder/build_logs/test.binlog" `
